@@ -121,5 +121,24 @@ namespace NumberGuess
         {
 
         }
+
+        private void txtGuess_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //prevent non numbers from being entered 
+            //control characters are non printing characters like the enter key
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; //stopping the key press so nothing is entered in the textbox
+            }
+        }
+
+        private void txtGuess_KeyDown(object sender, KeyEventArgs e)
+        {
+            int result;
+            if (e.KeyCode == Keys.Enter) //if they use enter key we are accepting guess
+            {
+
+            }
+        }
     }
 }

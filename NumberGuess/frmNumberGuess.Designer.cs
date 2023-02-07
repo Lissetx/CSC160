@@ -141,6 +141,8 @@
             this.txtGuess.Tag = "txtGuess";
             this.txtGuess.Text = "00";
             this.txtGuess.TextChanged += new System.EventHandler(this.txtGuess_TextChanged);
+            this.txtGuess.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGuess_KeyDown);
+            this.txtGuess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGuess_KeyPress);
             // 
             // label2
             // 
