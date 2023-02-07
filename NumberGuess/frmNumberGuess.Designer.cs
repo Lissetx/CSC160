@@ -140,6 +140,7 @@
             this.txtGuess.TabIndex = 3;
             this.txtGuess.Tag = "txtGuess";
             this.txtGuess.Text = "00";
+            this.txtGuess.TextChanged += new System.EventHandler(this.txtGuess_TextChanged);
             // 
             // label2
             // 

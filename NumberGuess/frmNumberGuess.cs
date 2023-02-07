@@ -116,5 +116,10 @@ namespace NumberGuess
             MessageBox.Show("You sucK!!!! the awnser was: " + answer + ", so close !!!!!");
 
         }
+
+        private void txtGuess_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
