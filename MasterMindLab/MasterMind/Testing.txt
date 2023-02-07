@@ -1,0 +1,9 @@
+﻿Check if diffculty choice actually uses right amount of pegs
+- easy 4
+- medium 6
+- hard 8
+- check wrong menu selection like 7 or string
+check wrong number of attempts
+check color selection is correct
+check win / loss on each diffculty level
+check attempts selected are actual attempts you can meet
