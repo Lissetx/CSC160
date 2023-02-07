@@ -98,7 +98,23 @@ namespace NumberGuess
             if (rb.Checked == true)
             {
                 randomMax = 30; //Medium
+            
+            
             }
+        }
+
+        private void GameWon()
+        {
+            txtGuess.Enabled = false;
+            MessageBox.Show("You won! You are the best!!!");
+            //Application.Exit(); //exits app 
+        }
+
+        private void GameLost()
+        {
+            txtGuess.Enabled = false;
+            MessageBox.Show("You sucK!!!! the awnser was: " + answer + ", so close !!!!!");
+
         }
     }
 }
